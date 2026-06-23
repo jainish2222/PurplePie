@@ -1,65 +1,201 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+import Link from "next/link";
+import AnimatedBlobBg from "@/components/AnimatedBlobBg";
+import HomeHeroMotion from "@/components/HomeHeroMotion";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "PurplePie | Product-Based App, Web & AI Tool Company",
+
+  description:
+    "PurplePie builds AI tools, SaaS products, web applications, and mobile apps focused on solving real-world problems through feedback-driven product development.",
+
+  keywords: [
+    "AI tools",
+    "SaaS development",
+    "web applications",
+    "mobile apps",
+    "product development",
+    "startup studio",
+    "software company",
+  ],
+
+  alternates: {
+    canonical: "https://purplepie.in",
+  },
+
+  openGraph: {
+    title: "PurplePie | Product-Based App, Web & AI Tool Company",
+    description:
+      "Building apps, SaaS platforms, and AI products people actually use.",
+    url: "https://purplepie.in",
+    siteName: "PurplePie",
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "PurplePie | Product-Based App, Web & AI Tool Company",
+    description:
+      "Building apps, SaaS platforms, and AI products people actually use.",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+const navItems = [
+  {
+    label: "Products",
+    href: "/products",
+  },
+  {
+    label: "Team",
+    href: "/team",
+  },
+  {
+    label: "About Us",
+    href: "/about",
+  },
+  {
+    label: "Contact Us",
+    href: "/contact",
+  },
+];
+
+const policyItems = [
+  {
+    label: "Privacy Policy",
+    href: "/policies/privacy-policy",
+  },
+  {
+    label: "Terms & Conditions",
+    href: "/policies/terms-and-conditions",
+  },
+  {
+    label: "Refund Policy",
+    href: "/policies/refund-policy",
+  },
+];
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <>
+      <main
+        id="main-content"
+        className="relative min-h-screen overflow-hidden"
+      >
+        <AnimatedBlobBg />
+
+        <header className="relative z-20 w-full px-5 py-5 sm:px-8 md:px-12 lg:px-16">
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+            <Link
+              href="/"
+              aria-label="PurplePie Home"
+              className="font-space text-2xl font-semibold text-white sm:text-3xl md:text-4xl"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              PurplePie
+            </Link>
+
+            <aside
+              aria-label="Company tagline"
+              className="w-full overflow-hidden rounded-full border border-white/10 bg-white/5 backdrop-blur-md lg:max-w-4xl"
             >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+              <p className="marquee whitespace-nowrap py-3 font-space text-xs text-white/70 sm:text-sm">
+                <span>
+                  We launch apps, web platforms, and AI tools, gather
+                  feedback from real users, and continuously improve until
+                  we find product-market fit.
+                </span>
+
+                <span
+                  className="ml-16"
+                  aria-hidden="true"
+                >
+                  We launch apps, web platforms, and AI tools, gather
+                  feedback from real users, and continuously improve until
+                  we find product-market fit.
+                </span>
+              </p>
+            </aside>
+          </div>
+        </header>
+
+        <section
+          aria-labelledby="hero-heading"
+          className="relative z-10 flex min-h-[calc(100vh-180px)] items-center px-5 py-12 sm:px-8 md:px-12 lg:px-16"
+        >
+          <div className="mx-auto flex w-full max-w-7xl flex-col gap-12 lg:flex-row lg:items-center lg:justify-between">
+            <article className="max-w-3xl space-y-8">
+              {/* <h1
+                id="hero-heading"
+                className="font-space text-5xl font-bold leading-tight text-white sm:text-5xl md:text-6xl"
+              >
+                Build Products People Actually Need
+              </h1> */}
+ <HomeHeroMotion />
+              <p className="max-w-2xl text-base leading-8 text-white/80 sm:text-lg">
+                PurplePie is a product-focused company building web
+                applications, mobile apps, and AI-powered tools that solve
+                real-world problems through rapid iteration, customer
+                feedback, and product-market fit validation.
+              </p>
+
+             
+            </article>
+
+            <nav
+              aria-label="Primary navigation"
+              className="flex flex-wrap gap-4 lg:flex-col lg:items-start lg:gap-8"
+            >
+              {navItems.map((item) => (
+  <Link
+    key={item.href}
+    href={item.href}
+    className="
+      font-space
+      text-base
+      font-bold
+      sm:font-medium
+      text-white/80
+      transition-colors
+      duration-300
+      hover:text-white
+      hover:font-bold
+    "
+  >
+    {item.label}
+  </Link>
+))}
+            </nav>
+          </div>
+        </section>
+
+        <footer className="relative z-20 border-t border-white/10 px-5 py-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <p className="text-xs text-white/50">
+              © 2026 PurplePie. All rights reserved.
+            </p>
+
+            <nav
+              aria-label="Legal links"
+              className="flex flex-wrap gap-4"
+            >
+              {policyItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="text-xs text-white/60 transition-colors hover:text-white focus:outline-none"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+          </div>
+        </footer>
       </main>
-    </div>
+    </>
   );
 }
