@@ -136,7 +136,7 @@ export default function HomePage() {
                 Build Products People Actually Need
               </h1> */}
  <HomeHeroMotion />
-              <p className="max-w-2xl text-base leading-8 text-white/80 sm:text-lg">
+              <p className="font-space max-w-2xl text-base leading-8 text-white/80 sm:text-lg">
                 PurplePie is a product-focused company building web
                 applications, mobile apps, and AI-powered tools that solve
                 real-world problems through rapid iteration, customer
