@@ -173,6 +173,40 @@ export default function HomePage() {
           </div>
         </section>
 
+<div className="grid h-[650px] gap-4 md:grid-cols-3">
+  <div className="col-span-2 row-span-2 rounded-[40px] border border-white/10 p-10">
+    <p className="text-purple-400">01</p>
+
+    <h3 className="mt-6 text-5xl font-bold text-white">
+      Product
+      <br />
+      Innovation Lab
+    </h3>
+
+    <p className="mt-6 max-w-xl text-white/60">
+      We launch products, gather feedback,
+      iterate relentlessly and discover
+      what people actually need.
+    </p>
+  </div>
+
+  <div className="rounded-[40px] border border-white/10 p-8">
+    <h3>AI Tools</h3>
+  </div>
+
+  <div className="rounded-[40px] border border-white/10 p-8">
+    <h3>SaaS Platforms</h3>
+  </div>
+
+  <div className="rounded-[40px] border border-white/10 p-8">
+    <h3>Web Apps</h3>
+  </div>
+
+  <div className="rounded-[40px] border border-white/10 p-8">
+    <h3>Mobile Apps</h3>
+  </div>
+</div>
+
         <footer className="relative z-20 border-t border-white/10 px-5 py-6 sm:px-8 md:px-12 lg:px-16">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <p className="text-xs text-white/50">

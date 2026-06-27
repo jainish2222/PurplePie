@@ -290,4 +290,109 @@ export const products: Product[] = [
       "Compliance workflows",
     ],
   },
+//   {
+//   "title": "DevScale Labs",
+//   "slug": "devscale-labs",
+//   "category": "Software Development Agency",
+//   "status": "Concept",
+
+//   "links": {
+//     "website": null,
+//     "playStore": null,
+//     "appStore": null
+//   },
+
+//   "shortDescription": "AI-powered software agency enabling junior developers to deliver senior-level solutions.",
+
+//   "headline": "Transforming junior talent into high-performing engineering teams.",
+
+//   "description": "DevScale Labs combines AI-assisted development, senior engineering mentorship, reusable architectures, and standardized workflows to help 1-2 year developers successfully deliver complex software projects typically handled by experienced engineering teams.",
+
+//   "features": [
+//     "AI-assisted development",
+//     "Senior architect reviews",
+//     "Reusable code frameworks",
+//     "Project delivery management",
+//     "Automated testing pipelines",
+//     "Code quality monitoring",
+//     "Technical mentorship",
+//     "Knowledge sharing platform",
+//     "Performance tracking",
+//     "Client collaboration portal"
+//   ],
+
+//   "useCases": [
+//     "Startup MVP development",
+//     "SaaS applications",
+//     "E-commerce platforms",
+//     "Internal business tools",
+//     "CRM systems",
+//     "Mobile applications",
+//     "Digital transformation projects"
+//   ],
+
+//   "targetAudience": [
+//     "Startups",
+//     "Small businesses",
+//     "Enterprise clients",
+//     "Junior developers",
+//     "Software agencies"
+//   ],
+
+//   "businessModel": [
+//     "Fixed-price projects",
+//     "Dedicated development teams",
+//     "Technical consulting",
+//     "Mentorship programs",
+//     "Development subscriptions"
+//   ]
+// },
+// {
+//   "fullName": "Koladiya Jainish Mukeshbhai",
+
+//   "education": {
+//     "institution": "Sarvajanik College of Engineering & Technology",
+//     "degree": "Bachelor of Technology (B.Tech)",
+//     "specialization": "Information Technology",
+//     "graduationYear": 2025,
+//     "status": "Passed Out"
+//   },
+
+//   "employment": {
+//     "designation": "Software Engineer",
+//     "company": "Obsio Solutions",
+//     "joiningDate": "2021-04-10",
+//     "lastWorkingDate": "2026-06-15",
+//     "reasonForLeaving": "Career Growth",
+
+//     "careerProgression": [
+//       {
+//         "title": "Software Engineer Intern",
+//         "startDate": "2021-04-10",
+//         "endDate": "2021-07-31",
+//         "salary": null,
+//         "employmentType": "Internship"
+//       },
+//       {
+//         "title": "Software Engineer",
+//         "startDate": "2021-08-01",
+//         "endDate": "2026-06-15",
+//         "startingCTC": "6 LPA",
+//         "endingCTC": "9.5 LPA",
+//         "employmentType": "Full Time",
+//         "promotionDetails": {
+//           "effectiveDate": "2021-08-01",
+//           "offeredCTC": "6 LPA"
+//         }
+//       }
+//     ]
+//   },
+
+//   "experienceSummary": {
+//     "totalExperience": "5 Years 2 Months",
+//     "primaryRole": "Software Engineer",
+//     "careerStartDate": "2021-04-10",
+//     "careerEndDate": "2026-06-15"
+//   }
+// }
 ];
