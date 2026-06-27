@@ -83,10 +83,7 @@ const policyItems = [
 export default function HomePage() {
   return (
     <>
-      <main
-        id="main-content"
-        className="relative min-h-screen overflow-hidden"
-      >
+      <main id="main-content" className="relative min-h-screen overflow-hidden">
         <AnimatedBlobBg />
 
         <header className="relative z-20 w-full px-5 py-5 sm:px-8 md:px-12 lg:px-16">
@@ -105,18 +102,15 @@ export default function HomePage() {
             >
               <p className="marquee whitespace-nowrap py-3 font-space text-xs text-white/70 sm:text-sm">
                 <span>
-                  We launch apps, web platforms, and AI tools, gather
-                  feedback from real users, and continuously improve until
-                  we find product-market fit.
+                  We launch apps, web platforms, and AI tools, gather feedback
+                  from real users, and continuously improve until we find
+                  product-market fit.
                 </span>
 
-                <span
-                  className="ml-16"
-                  aria-hidden="true"
-                >
-                  We launch apps, web platforms, and AI tools, gather
-                  feedback from real users, and continuously improve until
-                  we find product-market fit.
+                <span className="ml-16" aria-hidden="true">
+                  We launch apps, web platforms, and AI tools, gather feedback
+                  from real users, and continuously improve until we find
+                  product-market fit.
                 </span>
               </p>
             </aside>
@@ -135,15 +129,13 @@ export default function HomePage() {
               >
                 Build Products People Actually Need
               </h1> */}
- <HomeHeroMotion />
+              <HomeHeroMotion />
               <p className="font-space max-w-2xl text-base leading-8 text-white/80 sm:text-lg">
                 PurplePie is a product-focused company building web
                 applications, mobile apps, and AI-powered tools that solve
-                real-world problems through rapid iteration, customer
-                feedback, and product-market fit validation.
+                real-world problems through rapid iteration, customer feedback,
+                and product-market fit validation.
               </p>
-
-             
             </article>
 
             <nav
@@ -151,10 +143,10 @@ export default function HomePage() {
               className="flex flex-wrap gap-4 lg:flex-col lg:items-start lg:gap-8"
             >
               {navItems.map((item) => (
-  <Link
-    key={item.href}
-    href={item.href}
-    className="
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="
       font-space
       text-base
       font-bold
@@ -165,15 +157,15 @@ export default function HomePage() {
       hover:text-white
       hover:font-bold
     "
-  >
-    {item.label}
-  </Link>
-))}
+                >
+                  {item.label}
+                </Link>
+              ))}
             </nav>
           </div>
         </section>
 
-{/* <div className="grid h-[650px] gap-4 md:grid-cols-3">
+        {/* <div className="grid h-[650px] gap-4 md:grid-cols-3">
   <div className="col-span-2 row-span-2 rounded-[40px] border border-white/10 p-10">
     <p className="text-purple-400">01</p>
 
@@ -213,10 +205,7 @@ export default function HomePage() {
               © 2026 PurplePie. All rights reserved.
             </p>
 
-            <nav
-              aria-label="Legal links"
-              className="flex flex-wrap gap-4"
-            >
+            <nav aria-label="Legal links" className="flex flex-wrap gap-4">
               {policyItems.map((item) => (
                 <Link
                   key={item.href}

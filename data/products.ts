@@ -47,8 +47,8 @@ export const products: Product[] = [
   {
     title: "File Compression",
     slug: "file-compression",
-    category: "Web",
-    status: "Live",
+    category: "Mobile App",
+    status: "Developing",
 
     links: {
       website: "https://compress.purplepie.io",
@@ -250,45 +250,87 @@ export const products: Product[] = [
       "Progress monitoring",
     ],
   },
+{
+  title: "MindScroll",
+  slug: "mindscroll",
+  category: "Mobile App",
+  status: "Developing",
 
-  {
-    title: "Screen Time Access",
-    slug: "screen-time-access",
-    category: "Web",
-    status: "Concept",
+  links: {
+    website: null,
+    playStore: null,
+    appStore: null,
+  },
 
-    links: {
-      website: null,
-      playStore: null,
-      appStore: null,
-    },
+  shortDescription:
+    "Reduce social media addiction with mindful scrolling and screen-time awareness.",
 
-    shortDescription:
-      "Control time-based access for React apps, dashboards, and tools.",
+  headline:
+    "Take back your attention without giving up the content you love.",
 
-    headline:
-      "Restrict application access using configurable screen-time rules.",
+  description:
+    "MindScroll is a digital wellbeing app that helps users build healthier social media habits. It overlays a floating widget on apps like Instagram, YouTube Shorts, and TikTok to show how much time has been spent scrolling, how many reels or shorts have been watched, and gentle reminders to take breaks. Instead of blocking entertainment, it encourages mindful usage through goals, insights, and habit tracking.",
 
-    description:
-      "Screen Time Access enables developers and businesses to create time-based restrictions for applications, dashboards, portals, and productivity tools to improve control, compliance, and user management.",
+  features: [
+    "Floating widget for Instagram, YouTube Shorts, and TikTok",
+    "Real-time scroll timer",
+    "Reels and Shorts counter",
+    "Daily screen-time analytics",
+    "Custom usage limits and reminders",
+    "Focus mode with break prompts",
+    "Weekly habit reports",
+    "Achievement badges for healthy habits",
+  ],
 
-    features: [
-      "Time-based restrictions",
-      "Role permissions",
-      "Access scheduling",
-      "Dashboard controls",
-      "Usage insights",
-      "Developer SDK",
-    ],
+  useCases: [
+    "Reduce social media addiction",
+    "Limit endless scrolling",
+    "Improve focus and productivity",
+    "Build healthier digital habits",
+    "Track daily screen time",
+    "Digital wellbeing for students and professionals",
+  ],
+},
+ {
+  title: "WaitPay",
+  slug: "waitpay",
+  category: "Web",
+  status: "Concept",
 
-    useCases: [
-      "Employee access control",
-      "Educational portals",
-      "Subscription management",
-      "Productivity tools",
-      "Parental controls",
-      "Compliance workflows",
-    ],
+  links: {
+    website: null,
+    playStore: null,
+    appStore: null,
+  },
+
+  shortDescription:
+    "Turn loading screens into a reward-powered advertising channel.",
+
+  headline:
+    "Earn rewards while you wait. Help AI apps monetize every loading second.",
+
+  description:
+    "WaitPay is an advertising platform that transforms application loading screens into monetizable moments. Developers integrate a lightweight SDK that displays short sponsored cards, product showcases, or brand messages while users wait for AI responses, uploads, or processing tasks. Users earn points or rewards for viewing these sponsored experiences, brands gain high-attention impressions, and developers unlock a new revenue stream without interrupting the core product experience.",
+
+  features: [
+    "SDK for web and mobile apps",
+    "Sponsored loading screen cards",
+    "Reward points for users",
+    "Brand campaign dashboard",
+    "Developer revenue sharing",
+    "Targeted ad delivery",
+    "Analytics and engagement metrics",
+    "Custom branded loading experiences",
+  ],
+
+  useCases: [
+    "AI chat applications",
+    "Image generation tools",
+    "Video rendering platforms",
+    "File upload workflows",
+    "Code generation tools",
+    "Cloud dashboards",
+  ],
   },
 //   {
 //   "title": "DevScale Labs",
