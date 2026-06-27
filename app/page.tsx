@@ -173,7 +173,7 @@ export default function HomePage() {
           </div>
         </section>
 
-<div className="grid h-[650px] gap-4 md:grid-cols-3">
+{/* <div className="grid h-[650px] gap-4 md:grid-cols-3">
   <div className="col-span-2 row-span-2 rounded-[40px] border border-white/10 p-10">
     <p className="text-purple-400">01</p>
 
@@ -205,7 +205,7 @@ export default function HomePage() {
   <div className="rounded-[40px] border border-white/10 p-8">
     <h3>Mobile Apps</h3>
   </div>
-</div>
+</div> */}
 
         <footer className="relative z-20 border-t border-white/10 px-5 py-6 sm:px-8 md:px-12 lg:px-16">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
