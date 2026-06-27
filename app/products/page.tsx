@@ -2,14 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import ProductsClient from "@/components/ProductsClient";
+import CatAnimation from "@/components/CatAnimation";
 import { products } from "@/data/products";
 
 export const metadata: Metadata = {
   title: "Products | PurplePie",
-
   description:
     "Explore PurplePie products including web applications, mobile apps, AI tools, productivity software and digital platforms.",
-
   keywords: [
     "PurplePie",
     "Web Apps",
@@ -18,33 +17,23 @@ export const metadata: Metadata = {
     "Software Products",
     "Digital Products",
   ],
-
   alternates: {
     canonical: "https://purplepie.in/products",
   },
-
   openGraph: {
     title: "Products | PurplePie",
-
     description:
       "Explore web apps, mobile apps and AI tools built by PurplePie.",
-
     url: "https://purplepie.in/products",
-
     siteName: "PurplePie",
-
     type: "website",
   },
-
   twitter: {
     card: "summary_large_image",
-
     title: "Products | PurplePie",
-
     description:
       "Explore web apps, mobile apps and AI tools built by PurplePie.",
   },
-
   robots: {
     index: true,
     follow: true,
@@ -60,6 +49,8 @@ export default function ProductsPage() {
       position: index + 1,
       name: product.title,
       description: product.shortDescription,
+      url: `https://purplepie.in/products/${product.slug}`,
+      applicationCategory: product.category,
     })),
   };
 
@@ -67,9 +58,7 @@ export default function ProductsPage() {
     <main className="min-h-screen text-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       <div className="mx-auto max-w-7xl px-5 py-10 sm:px-8 lg:px-16">
@@ -89,23 +78,34 @@ export default function ProductsPage() {
           </Link>
         </header>
 
-        <section aria-labelledby="products-heading" className="mt-20">
-          <p className="mb-4 text-sm uppercase tracking-[0.35em] text-purple-300">
-            Products
-          </p>
+        <section
+          aria-labelledby="products-heading"
+          className="mt-5 flex flex-col items-center gap-10 lg:flex-row lg:items-center lg:justify-between lg:gap-16"
+        >
+          {/* Left: text + description */}
+          <div className="w-full max-w-2xl text-center lg:text-left">
+            <p className="mb-4 text-xs uppercase tracking-[0.3em] text-purple-300 sm:text-sm sm:tracking-[0.35em]">
+              Products
+            </p>
 
-          <h1
-            id="products-heading"
-            className="max-w-5xl font-space text-5xl leading-tight md:text-7xl"
-          >
-            Explore our growing collection of{" "}
-            <span className="text-purple-300">digital products</span>
-          </h1>
+            <h1
+              id="products-heading"
+              className="font-space text-2xl leading-tight sm:text-3xl md:text-4xl xl:text-5xl"
+            >
+              Explore our growing collection of{" "}
+              <span className="text-purple-300">digital products</span>
+            </h1>
 
-          <p className="mt-6 max-w-3xl font-space text-lg leading-8 text-white/60">
-            Discover web tools, mobile applications, AI-powered utilities, and
-            software products built by PurplePie to solve real user problems.
-          </p>
+            <p className="mx-auto mt-6 max-w-2xl font-space text-base leading-7 text-white/60 sm:text-lg sm:leading-8 lg:mx-0">
+              Discover web tools, mobile applications, AI-powered utilities, and
+              software products built by PurplePie to solve real user problems.
+            </p>
+          </div>
+
+          {/* Right: animation */}
+          <div className="w-full max-w-[300px] shrink-0 sm:max-w-[280px] lg:max-w-[380px] xl:max-w-[450px] mx-auto">
+            <CatAnimation />
+          </div>
         </section>
 
         <ProductsClient products={products} />
